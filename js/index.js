@@ -5,6 +5,25 @@ $(document).ready(function () {
 // 	// Apply a dark color scheme
 // }
 
+$('.back-to-top').click(() => {
+	scrollfn("#overview");
+})
+
+
+$(window).scroll(function () {
+	((window.pageYOffset || document.documentElement.scrollTop) > 100) ? $('.back-to-top').css({ opacity: 1, visibility: "visible" }) : $('.back-to-top').css({ opacity: 0, visibility: "hidden" });
+});
+
+function scrollfn(e) {
+	let $target = $(e),
+	offSet = e === "#overview" ? 0 : $target.offset().top;
+	$('html, body').stop().animate({
+		'scrollTop': offSet
+	}, 1200, 'swing');
+
+
+}
+
 if ($(document).innerWidth() <= 767) {
 
 	$(window).on('scroll', function() {
