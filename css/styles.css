@@ -90,7 +90,6 @@ h2 {
   text-align: center;
   font-size: 38px;
 
-  font-family: Arial, Helvetica, sans-serif;
 }
 body {
   /* font-family: 'Inter', sans-serif; */
@@ -1032,6 +1031,15 @@ h3.teal {
   margin-top: .6em;
   font-weight: 600;
   margin-bottom:1em
+}
+
+h4.teal {
+  font-size: 22px;
+  color: #08768D;
+  text-align: left;
+  margin-top: .6em;
+  font-weight: 400;
+  margin-bottom: .6em;
 }
 
 
@@ -2095,8 +2103,12 @@ label.togglePassword {
 }
 
 .tab-pane {
-  padding:2em;
-  background: white;
+  padding:1.6em;
+
+}
+
+.tab-pane h4.teal, .tab-pane h3.darkerBlue {
+  line-height: 1.5
 }
 
 .btn {
@@ -2110,6 +2122,7 @@ label.togglePassword {
     background: white;
     /* margin-bottom: 0em; */
     font-size: 18px;
+    font-weight: 600;
 }
 
 .btn i{
@@ -2241,14 +2254,122 @@ label.togglePassword {
 
 }
 
+.padding-0 {
+    padding: 0;
+}
+
+.heading {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: .3em;
+    border-top-right-radius: 1rem;
+    border-top-left-radius: 1rem;
+}
+
+.navyFont {
+  color:#002F6C;
+  font-size:18px;
+  font-weight: 700;
+    margin-bottom: 0em;
+}
+
+.key1 {
+  background: #F1F2F2;
+      border-radius: 1rem;
+}
+
+.mostSmall {
+    font-size: 11px;
+    margin-top: 1em;
+    font-weight: 600;
+    padding-left: 2px;
+    padding-right: 2px;
+    color:black
+}
+
+.content {
+  padding:1em
+}
 
 
+.leftCol{
 
+    border-bottom-left-radius: 1rem;
+}
+
+.leftCol .black {
+    color: black;
+    font-size: 16px;
+    margin-top: 0em;
+
+    margin:.5em 0em !important;
+    font-weight: 700;
+}
+
+.margin-0 {
+  margin:0em !important
+}
+
+.navyFont i {
+  font-weight: 700;
+    font-size: 18px;
+
+}
+
+.periwinkle.light{
+  background: #e4effb !important
+}
+
+
+.rightCol .black {
+    color: #000914;
+    font-size: 16px;
+    margin-top: 0em;
+
+    margin:.5em 0em !important;
+    font-weight: 300;
+}
+
+.paddingHalf {
+  padding:.5em 0em
+}
+
+.table thead th {
+    vertical-align: bottom;
+    border-bottom: none;
+    color: white;
+}
+.table td, .table th {
+    padding: .75rem;
+    vertical-align: top;
+    border-top: 1px solid #c0dfe6;
+    color: #002F6C;
+}
+
+.brightAqua {
+  background: #cdfaf4;
+  border-radius: 1rem;
+  padding:2em;
+  margin: 2em 4em 2em 1em;
+}
+
+.brightAqua h3.darkerBlue {
+  font-size:17px;
+}
+
+.table {
+    width: 85%;
+    margin-bottom: 1rem;
+    background-color: transparent;
+    margin-left: 5%;
+    margin-right: 5%;
+}
 
 
 @media (min-width: 992px){
   .modal-lg {
-    max-width: 1000px;
+    max-width: 1170px;
   }
 
   .modal {
@@ -3709,7 +3830,7 @@ button.close {
   color:black;
   font-size:16px;
   margin-top:.5em;
-  font-family: Arial, Helvetica, sans-serif;
+
 }
 
 .survey-container {
@@ -3741,7 +3862,7 @@ button.close {
 }
 
 .tab-content {
-  background: #fafdff;
+  background: white;
   border: none;
   outline: none;
 
