@@ -145,6 +145,10 @@ body * {
     opacity: 1;
   }
 }
+
+.block50 {
+  padding: 2em 0em 5em 0em;
+}
 .logo {
   max-width: 25em;
   padding-left: 1em;
@@ -162,8 +166,13 @@ i{
   margin-bottom:1em
 }
 
+.vertical p.white {
+  max-width:20em
+}
+
 .navy {
-  background: #002F6C
+  background: #002F6C;
+  position: relative;
 }
 
 .page_nav{
