@@ -1057,8 +1057,8 @@ h3.darkerBlue {
   color: black;
   padding: .8em 0em;
   border-radius: 1.5rem;
-  min-width: 23%;
-  max-width: 25%;
+  min-width: 10em;
+  max-width: 12em;
 }
 
 .whiteBubble2 {
@@ -2092,6 +2092,75 @@ label.togglePassword {
 #myModal .modal-header .close {
   padding: 0;
   margin: 0;
+}
+
+.tab-pane {
+  padding:2em;
+  background: white;
+}
+
+.btn {
+    border: 2px solid #0F7D94;
+    padding: .5rem 1rem;
+    border-radius: 2rem;
+    margin: .25rem .5rem;
+    color: #0F7D94;
+    display: block;
+    transition: all 0.2s;
+    background: white;
+    /* margin-bottom: 0em; */
+    font-size: 18px;
+}
+
+.btn i{
+  font-size:20px;
+
+}
+.darkTeal {
+  color:#0F7D94 !important;
+}
+
+.btn:hover i{
+  color:white !important
+}
+
+.btn:hover {
+    border: 1px solid #0F7D94;
+    padding: .5rem 1rem;
+    border-radius: 2rem;
+    margin: .25rem .5rem;
+    color: #fff;
+    display: block;
+    transition: all 0.2s;
+    background: #0F7D94;
+    box-shadow: 0 2px 8px rgba(0,0,0,.15);
+}
+
+.darkTeal{
+  color:#0F7D94
+}
+
+.tab-pane .middle{
+  width:70%;
+  margin-top:0em;
+  max-height:none;
+      margin-left: 1em;
+}
+.start {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.tab-pane .landing-sec-H {
+    font-size: 30px;
+    font-weight: 800;
+    color: #01579B;
+    padding-bottom: 5px;
+    /* border-bottom: 3px solid #7bc043; */
+    position: relative;
+    /* width: 280px; */
+    margin: 0 auto;
+    text-align: left;
 }
 
 #myModal .nav {
