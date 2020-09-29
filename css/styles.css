@@ -1309,7 +1309,7 @@ h1.white.sentMessage {
 
 .tealColor {
   color:#0F7D94;
-  font-size: 18px;
+  font-size: 20px;
 }
 
 .secondBlock .fas {
@@ -2112,17 +2112,17 @@ label.togglePassword {
 }
 
 .btn {
-    border: 2px solid #0F7D94;
-    padding: .5rem 1rem;
-    border-radius: 2rem;
-    margin: .25rem .5rem;
-    color: #0F7D94;
-    display: block;
-    transition: all 0.2s;
-    background: white;
-    /* margin-bottom: 0em; */
-    font-size: 18px;
-    font-weight: 600;
+  border: 2px solid #0F7D94;
+  padding: .5rem 1rem;
+  border-radius: 2rem;
+  margin: .25rem .5rem;
+  color: #0F7D94;
+  display: block;
+  transition: all 0.2s;
+  background: white;
+  /* margin-bottom: 0em; */
+  font-size: 18px;
+  font-weight: 600;
 }
 
 .btn i{
@@ -2138,15 +2138,15 @@ label.togglePassword {
 }
 
 .btn:hover {
-    border: 1px solid #0F7D94;
-    padding: .5rem 1rem;
-    border-radius: 2rem;
-    margin: .25rem .5rem;
-    color: #fff;
-    display: block;
-    transition: all 0.2s;
-    background: #0F7D94;
-    box-shadow: 0 2px 8px rgba(0,0,0,.15);
+  border: 1px solid #0F7D94;
+  padding: .5rem 1rem;
+  border-radius: 2rem;
+  margin: .25rem .5rem;
+  color: #fff;
+  display: block;
+  transition: all 0.2s;
+  background: #0F7D94;
+  box-shadow: 0 2px 8px rgba(0,0,0,.15);
 }
 
 .darkTeal{
@@ -2157,7 +2157,7 @@ label.togglePassword {
   width:70%;
   margin-top:0em;
   max-height:none;
-      margin-left: 1em;
+  margin-left: 1em;
 }
 .start {
   display: flex;
@@ -2165,15 +2165,15 @@ label.togglePassword {
 }
 
 .tab-pane .landing-sec-H {
-    font-size: 30px;
-    font-weight: 800;
-    color: #01579B;
-    padding-bottom: 5px;
-    /* border-bottom: 3px solid #7bc043; */
-    position: relative;
-    /* width: 280px; */
-    margin: 0 auto;
-    text-align: left;
+  font-size: 30px;
+  font-weight: 800;
+  color: #01579B;
+  padding-bottom: 5px;
+  /* border-bottom: 3px solid #7bc043; */
+  position: relative;
+  /* width: 280px; */
+  margin: 0 auto;
+  text-align: left;
 }
 
 #myModal .nav {
@@ -2255,37 +2255,37 @@ label.togglePassword {
 }
 
 .padding-0 {
-    padding: 0;
+  padding: 0;
 }
 
 .heading {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: .3em;
-    border-top-right-radius: 1rem;
-    border-top-left-radius: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: .3em;
+  border-top-right-radius: 1rem;
+  border-top-left-radius: 1rem;
 }
 
 .navyFont {
   color:#002F6C;
   font-size:18px;
   font-weight: 700;
-    margin-bottom: 0em;
+  margin-bottom: 0em;
 }
 
 .key1 {
   background: #F1F2F2;
-      border-radius: 1rem;
+  border-radius: 1rem;
 }
 
 .mostSmall {
-    font-size: 11px;
-    margin-top: 1em;
-    font-weight: 600;
-    padding-left: 2px;
-    padding-right: 2px;
-    color:black
+  font-size: 11px;
+  margin-top: 1em;
+  font-weight: 600;
+  padding-left: 2px;
+  padding-right: 2px;
+  color:black
 }
 
 .content {
@@ -2295,16 +2295,16 @@ label.togglePassword {
 
 .leftCol{
 
-    border-bottom-left-radius: 1rem;
+  border-bottom-left-radius: 1rem;
 }
 
 .leftCol .black {
-    color: black;
-    font-size: 16px;
-    margin-top: 0em;
+  color: black;
+  font-size: 16px;
+  margin-top: 0em;
 
-    margin:.5em 0em !important;
-    font-weight: 700;
+  margin:.5em 0em !important;
+  font-weight: 700;
 }
 
 .margin-0 {
@@ -2313,7 +2313,7 @@ label.togglePassword {
 
 .navyFont i {
   font-weight: 700;
-    font-size: 18px;
+  font-size: 18px;
 
 }
 
@@ -2323,12 +2323,12 @@ label.togglePassword {
 
 
 .rightCol .black {
-    color: #000914;
-    font-size: 16px;
-    margin-top: 0em;
+  color: #000914;
+  font-size: 16px;
+  margin-top: 0em;
 
-    margin:.5em 0em !important;
-    font-weight: 300;
+  margin:.5em 0em !important;
+  font-weight: 300;
 }
 
 .paddingHalf {
@@ -2336,15 +2336,15 @@ label.togglePassword {
 }
 
 .table thead th {
-    vertical-align: bottom;
-    border-bottom: none;
-    color: white;
+  vertical-align: bottom;
+  border-bottom: none;
+  color: white;
 }
 .table td, .table th {
-    padding: .75rem;
-    vertical-align: top;
-    border-top: 1px solid #c0dfe6;
-    color: #002F6C;
+  padding: .75rem;
+  vertical-align: top;
+  border-top: 1px solid #c0dfe6;
+  color: #002F6C;
 }
 
 .brightAqua {
@@ -2359,11 +2359,11 @@ label.togglePassword {
 }
 
 .table {
-    width: 85%;
-    margin-bottom: 1rem;
-    background-color: transparent;
-    margin-left: 5%;
-    margin-right: 5%;
+  width: 85%;
+  margin-bottom: 1rem;
+  background-color: transparent;
+  margin-left: 5%;
+  margin-right: 5%;
 }
 
 
@@ -3962,25 +3962,96 @@ button.close {
   }
 }
 
-@media (max-width: 1599px) and (min-width: 1200px){
-  .img-l{
-    left: 0px;
-    top: -450px;
-    width: 175px;
-    height: 500px;
+@media (max-width: 1650px) {
+  .padding5 {
+    padding-left: 2%;
+    padding-right: 2%;
   }
+  .flip-card, .flip-card-front {
 
-  .img-r{
-    right: -100px;
-    top: -550px;
-    width: 300px;
-    height: 500px;
-  }
+    height: 24em;
 
-  .menu-buttons {
-    width: 70%;
+
   }
 }
+
+@media (max-width: 1450px) {
+
+  .flip-card, .flip-card-front {
+
+    height: 26em;
+
+  }
+
+  .flip-card-front img:first-child {
+    min-height: 8em;
+  }
+
+  .flip-card-front {
+    padding: 5em 1em;
+  }
+}
+
+
+@media (max-width:1400px) and (min-width:992px){
+  .block10 .col-lg-4 {
+
+    flex: 0 0 50%;
+    max-width: 50%;
+  }
+
+  .block10 .offset-md-2 {
+    margin-left: 0;
+  }
+  .block10 .col-lg-4:last-child {
+    left:25%
+  }
+  .flip-card, .flip-card-front {
+    height: 21em;
+  }
+  .flip-card-front {
+    padding: 3em 1em;
+  }
+  .long{
+    padding-top:2em
+  }
+}
+@media (max-width:1140px) and (min-width:1079px){
+  .flip-card, .flip-card-front {
+    height: 23em;
+  }
+
+
+}
+
+@media (max-width:1078px){
+  .block10 .col-lg-4 {
+    flex: 0 0 100%;
+    max-width: 100%;
+    padding-left: 22%;
+    padding-right: 22%;
+  }
+  .block10 .col-lg-4:last-child {
+    left: 0;
+  }
+  .block10 .offset-md-2 {
+    margin-left: 0;
+  }
+}
+
+@media (max-width:767px){
+  .block10 .col-lg-4 {
+    flex: 0 0 100%;
+    max-width: 100%;
+    padding-left: 2%;
+    padding-right: 2%;
+  }
+  .padding5 {
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+}
+
 
 @media (max-width:1560px)  {
   .heavy br{
