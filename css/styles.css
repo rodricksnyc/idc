@@ -641,6 +641,24 @@ width: 8em;
 
 }
 
+
+.funBubble {
+  background: white;
+  border: 1px solid #92BEF4;
+  border-radius: 1rem;
+
+  padding: .5em 1.5em;
+  max-width: 6em;
+  position: relative;
+  top: calc(50% - 3em);
+
+
+}
+
+.toggleAll:hover, .heading:hover, .whiteBubble:hover {
+  cursor: grab;
+}
+
 .rightBubble3 {
     background: transparent;
     padding: .4em 1.4em;
@@ -1559,7 +1577,6 @@ top: 99%;
   background: rgb(38,166,154);
   background: linear-gradient(90deg, rgba(38,166,154,1) 2%, rgba(15,125,148,1) 20%, rgba(9,92,131,1) 50%, rgba(0,47,108,1) 98%);
 }
-
 
 
 
@@ -2846,6 +2863,7 @@ p.modalFooter {
 
 .modal-body {
   padding-top: 0;
+  background: white;
 }
 
 .form-control.secondOne {
@@ -4035,7 +4053,7 @@ button.close {
 }
 
 .tab-content {
-  background: white;
+
   border: none;
   outline: none;
 

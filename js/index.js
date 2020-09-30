@@ -25,15 +25,26 @@ $(document).ready(function () {
 	}
 
 
-	$("a, button, input, [tabIndex='0']").on("keyup", function (e) {
+	$("a, button, input, [tabindex='0'], .slideToggle").on("keyup", function (e) {
 		var code = (e.keyCode ? e.keyCode : e.which);
 		if (code == 9) {
 			$(this).css('outline', 'dashed 3px #4599ff')
 		}
 
 	})
-	$("a, button, input, [tabIndex='0']").on('focusout', function() {
+	$("a, button, input, [tabindex='0'], .slideToggle").on('focusout', function() {
 		$(this).css('outline', 'none')
+	})
+
+	$(" .slideToggle").on("keyup", function (e) {
+		var code = (e.keyCode ? e.keyCode : e.which);
+		if (code == 9) {
+			$(this).find('.heading').css('outline', 'dashed 3px #4599ff')
+		}
+
+	})
+	$(".slideToggle").on('focusout', function() {
+		$(this).find('.heading').css('outline', 'none')
 	})
 
 	$('.whiteBubble').on("keyup", function (e) {
@@ -197,22 +208,10 @@ $('.whiteBubble').on('mouseleave',function() {
 	});
 
 
- // $('.slideToggle').click(function() {
-	//  alert("dsvibu")
-	//  $(this).closest('.key1').css('background', 'red')
- // })
-
-
-
-
 var toggle = function (){
 $(this).closest('.key1').find('.slideUp').slideToggle('800')
 
 $(this).closest('.key1').find('.navyFont i').toggleClass('rotate')
-
-// $(this).closest('.key1').find('.slideUp').animate({
-// 	"height": "0px"
-// },500)
 
 }
 $('.slideToggle').keypress(
@@ -221,6 +220,116 @@ $('.slideToggle').keypress(
 ).click(
 	toggle
 );
+
+
+
+var toggleAll = function (){
+
+if (!$(this).hasClass('hiddenKey')) {
+
+$(this).html('<i class="far fa-expand-arrows"></i> key').addClass('hiddenKey')
+
+$(this).closest('.keys').find('.key1').slideUp('800')
+
+$(this).addClass('funBubble')
+
+setTimeout(function() {
+	$('.toggleAll').css({
+		"transform" : "rotate(-90deg)"
+	});
+}, 500)
+
+
+
+
+}
+
+else {
+
+	$('.toggleAll').hide()
+	$(this).html('collapse all <i class="far fa-compress-arrows-alt"></i>').removeClass('hiddenKey')
+
+	$(this).closest('.keys').find('.key1').slideDown('800')
+
+	$(this).removeClass('funBubble')
+
+	setTimeout(function() {
+
+	$('.toggleAll').show()
+
+		$('.toggleAll').css({
+			"transform" : "rotate(0deg)"
+		});
+	}, 500)
+
+
+}
+
+}
+$('.toggleAll').keypress(
+	toggleAll
+
+).click(
+	toggleAll
+);
+
+
+
+// var clickLastNav = function() {
+//
+//
+//
+// 	// $('.nav-link:eq(3)').on('click', function() {
+// 	if (!$('.nav-link:eq(3)').hasClass('bars')) {
+//
+// 		$('.stickyNav .nav .nav-item').last().css('background', 'transparent')
+//
+//
+// 		$('.nav-link:eq(3)').html('<i class="fas fa-bars"></i>').addClass('bars')
+// 		$('.nav-item:not(:last-child)').hide()
+//
+// 		$('.nav-item').last().css({
+// 			'margin' : '0em'
+// 		})
+//
+// 		$('.nav-item .nav-link').last().css({
+// 			'padding' : '.4rem 1rem'
+// 		})
+//
+// 		$('.nav-item i').last().css('font-size', '27px')
+//
+// 	}
+//
+// 	else {
+//
+// 		$('.stickyNav .nav .nav-item').last().css('background', 'transparent')
+//
+// 		$('.nav-item:not(:last-child)').show()
+//
+// 		$('.nav-link:eq(3)').html('<i class="far fa-compress-arrows-alt"></i>').removeClass('bars')
+//
+// 		$('.nav-item').last().css({
+// 			'margin' : '0em 0em 1em 0em'
+// 		})
+// 		$('.nav-item .nav-link').last().css({
+// 			'padding' : '.5rem 1rem'
+// 		})
+//
+// 		$('.nav-item i').last().css('font-size', '1.5rem')
+//
+// 	}
+//
+//
+//
+// }
+//
+// $('.nav-link:eq(3)').keypress(
+// 	clickLastNav
+//
+// ).click(
+// 	clickLastNav
+// );
+
 
 
 
