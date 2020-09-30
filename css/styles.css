@@ -162,9 +162,9 @@ i{
 }
 
 .vertical img {
-  margin-bottom:1em
+    margin-bottom: 1.5em;
+    height: 8em;
 }
-
 .vertical p.white {
   max-width:20em
 }
@@ -683,9 +683,9 @@ height: 30px;
 
 .hero-img {
   width: 100%;
-  height: 600px;
+  height: auto;
   padding-top: 5%;
-  background-image: url(../images/Main-image.svg);
+  background-image: url(../images/background.svg);
   height: inherit;
   min-height: inherit;
   background-size: cover;
@@ -1355,7 +1355,7 @@ h1.white.sentMessage {
 
 }
 
-/* .speech-wrapper .bubble .bubble-arrow {
+.speech-wrapper .bubble .bubble-arrow {
 position: absolute;
 width: 0;
 bottom: 42px;
@@ -1371,15 +1371,17 @@ left: auto;
 content: "";
 position: absolute;
 border: 0 solid transparent;
-border-top: 9px solid #E1FCF8;
+
 border-radius: 0 20px 0;
 width: 15px;
 height: 30px;
 transform: rotate(145deg);
+border-top: 9px solid #E9F8FF
 }
 .speech-wrapper .bubble .bubble-arrow.alt:after {
 transform: rotate(45deg) scaleY(-1);
-} */
+border-top: 9px solid #E1FCF8;
+}
 
 
 .gradient {
@@ -3969,9 +3971,16 @@ button.close {
   }
   .flip-card, .flip-card-front {
 
-    height: 24em;
+    height: 24.5em;
 
 
+  }
+  .flip-card-front img:first-child {
+    min-height: 8em;
+  }
+
+  .flip-card-front {
+    padding: 5em 1em;
   }
 }
 
@@ -3990,6 +3999,10 @@ button.close {
   .flip-card-front {
     padding: 5em 1em;
   }
+  .padding10 {
+    padding-left: 5%;
+    padding-right: 5%;
+}
 }
 
 
@@ -4015,6 +4028,16 @@ button.close {
   .long{
     padding-top:2em
   }
+  .padding10 {
+    padding-left: 2%;
+    padding-right: 2%;
+}
+.whiteBubble2 .tealColor {
+
+    font-size: 16px;
+}
+
+
 }
 @media (max-width:1140px) and (min-width:1079px){
   .flip-card, .flip-card-front {
