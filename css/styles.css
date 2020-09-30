@@ -648,7 +648,7 @@ width: 8em;
   border-radius: 1rem;
 
   padding: .5em 1.5em;
-  max-width: 6em;
+  width: 6em;
   position: relative;
   top: calc(50% - 3em);
 
@@ -1440,26 +1440,29 @@ h1.white.sentMessage {
 }
 
 .aqua {
-  /* background: #eefcfa; */
+  /* background: #e6f9f5; */
   position: relative;
-  border-bottom-right-radius: 20% 161px;
-  border-bottom-left-radius: 20% 161px;
+  /* border-bottom-right-radius: 20% 161px;
+  border-bottom-left-radius: 20% 161px; */
 }
 
 .absoluteImage{
+  position: absolute;
+
+  background-repeat: no-repeat;
+ background-position: center;
+  width: 100%;
   position: absolute;
   background-image: url(../images/shape.svg);
   height: inherit;
   min-height: inherit;
   background-size: cover;
-  background-repeat: no-repeat;
-  /* background-position: center; */
-  width: 100%;
-  position: absolute;
 
   left: 0;
-  height: 102%;
+  height: 105%;
+
   bottom: 0;
+  right:0;
   z-index: -1;
 }
 
@@ -4110,7 +4113,7 @@ button.close {
 
 .white {
   color:white;
-  font-weight:300
+  font-weight:400
 }
 
 .greenSquare{
@@ -4201,7 +4204,7 @@ button.close {
 }
 
 
-@media (max-width:1400px) and (min-width:992px){
+@media (max-width:1400px) and (min-width:1025px){
   .block10 .col-lg-4 {
 
     flex: 0 0 50%;
@@ -4346,6 +4349,132 @@ button.close {
 
 }
 
+
+@media (max-width:1024px){
+  .absoluteText {
+    top: 72px;
+  }
+  h3.teal {
+    font-size: 22px;
+}
+h3.darkerBlue {
+    font-size: 20px;
+    text-align: center;
+}
+
+.tab-pane h3.darkerBlue{
+  text-align: left;
+}
+.rightCol .black {
+    color: #000914;
+    font-size: 13px;
+    margin-top: 0em;
+    margin: .5em 0em !important;
+    font-weight: 400;
+}
+.leftCol .black {
+    color: black;
+    font-size: 13px;
+    margin-top: 0em;
+    margin: .5em 0em !important;
+    font-weight: 700;
+}
+
+
+.content-spacer3 {
+    height: 3vh;
+}
+.leftBubble {
+    min-width: 9em;
+    max-width: 10em;
+}
+.middle {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    color: black;
+    width: auto;
+    max-width: 49%;
+    /* max-height: 6em; */
+    max-height: 9em;
+    margin-top: 0em;
+}
+.vertical img {
+    margin-bottom: 1.5em;
+    height: 7em;
+}
+
+.whiteBubble2 {
+    padding: 2em 1em;
+        height: 21em;
+}
+.whiteBubble2 .across {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+}
+.leftBubble2 img {
+  max-height:12em
+}
+.whiteBubble2 .tealColor {
+    font-size: 16px;
+    text-align: center;
+    padding: 0em 1em;
+}
+.white {
+  color:white;
+  font-weight:400;
+
+}
+.centerLogo p {
+    max-width: 12em;
+    margin-left: 1em;
+}
+.block10 .col-lg-4 {
+    flex: 0 0 50%;
+    max-width: 50%;
+    padding-left: 1%;
+    padding-right: 1%;
+}
+.flip-card, .flip-card-front {
+    height: 25em;
+}
+.block10 .col-lg-4:last-child {
+    left: 25%;
+}
+.flip-card-front {
+    padding: 4em 1em;
+}
+.flip-card-back h3.darkerBlue {
+    font-size: 18px;
+    text-align: center;
+}
+.flip-card-back.long {
+  padding-top:30px;
+}
+.flip-card-back p.black {
+    font-size: 16px;
+    text-align: center;
+}
+
+.flip-card-back.pt-4 {
+    padding-top: 2rem!important;
+}
+.flip-card-back.pt-5 {
+    padding-top: 3.5rem!important;
+}
+.padding10 {
+    padding-left: 2%;
+    padding-right: 2%;
+}
+#myModal button.close {
+    right: 5px;
+
+}
+
+}
+
 @media (max-width:1024px) and (min-width:992px) {
   .blue br {
     display: none !important;
@@ -4354,49 +4483,117 @@ button.close {
 }
 
 @media (max-width:991px) and (min-width:768px) {
-  .pt13 {
-    padding-top: 8em;
-    padding-bottom: 2em;
-  }
-
-  .survey-footer .two img {
-    margin-bottom:1em;
-  }
-
-  .survey-footer .two {
-    padding-top:6em
-  }
-
-  .nav-link:after {
-    border-bottom: none;
-    content: "";
-
-  }
-  .navbar .activeDot {
-    margin: 1em .5em;
-  }
-
-  .loginButton {
-    margin-bottom:1em;
-  }
 
 
+  .block10 .col-lg-4 {
+      flex: 0 0 100%;
+      max-width: 100%;
+      padding-left: 10%;
+      padding-right: 10%;
+  }
+  .flip-card, .flip-card-front {
+      height: 21em;
+  }
+  .block10 .col-lg-4:last-child {
+      left: 0%;
+      margin-bottom:4em
+  }
+  .block0 h1.teal.medium {
+    font-size: 25px;
+}
+.block0 h3.darkerBlue {
+    font-size: 18px;
+}
+h3.teal {
+    font-size: 24px;
+}
+.flip-card-front {
+    padding: 3em 1em;
+}
+.flip-card-front img:first-child {
+    min-height: 6em;
+}
 
-  h6.blue {
-    color: #00467f;
-    font-weight: 600;
-    font-size: 27px;
-    font-family: 'Source Sans Pro', sans-serif;
-    margin-top: 0em;
-    margin-bottom: 0em;
-    padding-right: 0em;
-    margin-right: 0em;
+.block5 .col-md-6 {
+    -ms-flex: 0 0 50%;
+    flex: 0 0 100%;
+    max-width: 100%;
+    padding-left: 10%;
+    padding-right: 10%;
+}
+.whiteBubble {
+
+    margin-bottom: 2em;
+}
+.block5 .mt-5{
+    margin-top: 1rem!important;
+}
+.block5  .middle {
+
+    max-width: 50%;
+
+    max-height: 6em;
+
+}
+.modal-dialog {
+    max-width: 768px;
+
+}
+.tab-pane .landing-sec-H {
+    font-size: 22px;
   }
-  #FAQ {
-    padding: 35px;
-    padding-top: 0px;
-    margin-top: -0px;
+  .block5 .landing-sec-H {
+    padding-top:0
   }
+  .vertical img {
+    margin-bottom: 1em;
+    height: 6em;
+}
+.whiteBubble2 {
+    padding: 1em 0em;
+    height: 21em;
+}
+
+.vertical p.white {
+    max-width: 14em;
+    text-align: center;
+}
+.img1 {
+    margin-bottom: -7em;
+    margin-right: 1em;
+}
+.img3 {
+    margin-bottom: -6em;
+    margin-right: 1em;
+}
+.img4 {
+    margin-bottom: -4em;
+    margin-right: 1em;
+}
+.centerLogo{
+    flex-direction: column;
+  }
+  .centerLogo img{
+    margin-bottom:1em
+  }
+  .centerLogo p {
+    max-width: 15em;
+    margin-left: 0em;
+    text-align: center;
+}
+.table {
+    width: 100%;
+    margin-bottom: 1rem;
+    background-color: transparent;
+    margin-left: 0%;
+    margin-right: 0%;
+}
+.brightAqua {
+    background: #cdfaf4;
+    border-radius: 1rem;
+    padding: 1em;
+    margin: 0;
+}
 
 }
 
