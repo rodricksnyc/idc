@@ -4401,7 +4401,7 @@ h3.darkerBlue {
 }
 .vertical img {
     margin-bottom: 1.5em;
-    height: 7em;
+    height: 8em;
 }
 
 .whiteBubble2 {
@@ -4442,6 +4442,12 @@ h3.darkerBlue {
 }
 .block10 .col-lg-4:last-child {
     left: 25%;
+    margin-bottom: 10vh;
+}
+.vertical p.white {
+    max-width: 17em;
+    text-align: center;
+    margin-bottom: 3em;
 }
 .flip-card-front {
     padding: 4em 1em;
@@ -4476,9 +4482,10 @@ h3.darkerBlue {
 }
 
 @media (max-width:1024px) and (min-width:992px) {
-  .blue br {
-    display: none !important;
-  }
+
+  .content-spacer1 {
+    height: 30vh;
+}
 
 }
 
@@ -5066,17 +5073,7 @@ body{
   height: 130px;
 }
 
-.landing-sec-H {
-  font-size: 28px;
-  font-weight: 800;
-  color: #00559b;
-  padding-bottom: 10px;
-  border-bottom: 2px solid #7bc043;
-  position: relative;
-  /* width: 280px; */
-  margin: 0 auto;
-  text-align: center;
-}
+
 
 .landing-sec{
   padding-right: 0px !important;
