@@ -83,12 +83,12 @@ $(document).ready(function () {
 
 $('.whiteBubble').on('mouseenter',function() {
 	$(this).find('.rightBubble').hide()
-	$(this).find('.new').fadeIn().css('display', 'flex')
+	$(this).find('.new').show().css('display', 'flex')
 })
 
 $('.whiteBubble').on('mouseleave',function() {
 	$(this).find('.rightBubble').show()
-	$(this).find('.new').fadeOut().css('display', 'none')
+	$(this).find('.new').hide().css('display', 'none')
 })
 
 
