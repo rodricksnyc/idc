@@ -255,12 +255,13 @@ $(this).closest('.keys').find('.key1').slideUp('800')
 
 $(this).addClass('funBubble')
 
+if ($(document).innerWidth() > 767) {
 setTimeout(function() {
 	$('.toggleAll').css({
 		"transform" : "rotate(-90deg)"
 	});
 }, 500)
-
+}
 
 
 
@@ -275,6 +276,7 @@ else {
 
 	$(this).removeClass('funBubble')
 
+if ($(document).innerWidth() > 767) {
 	setTimeout(function() {
 
 	$('.toggleAll').show()
@@ -283,6 +285,8 @@ else {
 			"transform" : "rotate(0deg)"
 		});
 	}, 500)
+
+}
 
 
 }
