@@ -62,6 +62,7 @@ $('.whiteBubble').on('mouseleave',function() {
 
 
 
+
 	$('.radio-inline input').on('keyup', function(e) {
 
 		var code = (e.keyCode ? e.keyCode : e.which);
@@ -196,8 +197,30 @@ $('.whiteBubble').on('mouseleave',function() {
 	});
 
 
+ // $('.slideToggle').click(function() {
+	//  alert("dsvibu")
+	//  $(this).closest('.key1').css('background', 'red')
+ // })
 
 
+
+
+var toggle = function (){
+$(this).closest('.key1').find('.slideUp').slideToggle('800')
+
+$(this).closest('.key1').find('.navyFont i').toggleClass('rotate')
+
+// $(this).closest('.key1').find('.slideUp').animate({
+// 	"height": "0px"
+// },500)
+
+}
+$('.slideToggle').keypress(
+	toggle
+
+).click(
+	toggle
+);
 
 
 

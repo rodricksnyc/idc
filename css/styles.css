@@ -653,6 +653,10 @@ width: 8em;
 
 }
 
+.rotate {
+  	transform: rotate(180deg)
+}
+
 
 /* .whiteBubble:hover .rightBubble i {
   font-size: 22px;
