@@ -598,6 +598,73 @@ label.error{
   font-size:28px
 }
 
+.rightBubble{
+  background: transparent;
+  padding: .4em 1.4em;
+  border-radius: 1rem;
+  color: white;
+width: 8em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 9px;
+}
+
+ .new {
+  background: white;
+      padding: .4em 1.4em;
+      border-radius: 1rem;
+      color: #26A69A;
+      font-size: 9px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 8em;
+      position: relative;
+      right: -33px;
+      box-shadow: 0px 0px 11px 1px rgba(191,210,223,.35);
+      display: none
+
+}
+
+.new i{
+  font-size: 16px;
+}
+
+
+.whiteBubble3 {
+
+    background: white;
+    border: 1px solid #92BEF4;
+    border-radius: 1rem;
+    padding: 1em;
+
+}
+
+.rightBubble3 {
+    background: transparent;
+    padding: .4em 1.4em;
+    border-radius: 1rem;
+    color: white;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+
+/* .whiteBubble:hover .rightBubble i {
+  font-size: 22px;
+}
+
+.whiteBubble:hover .middle {
+  width:70%
+}
+
+.whiteBubble:hover .rightBubble .fa-plus-circle:before {
+    content: "\f067";
+} */
 
 /*
 .survey-container {
@@ -1076,6 +1143,12 @@ h3.darkerBlue {
   padding:1em
 }
 
+.whiteBubble:hover {
+  background: rgb(229,241,255);
+  background: linear-gradient(90deg, rgba(229,241,255,1) 64%, rgba(247,251,255,1) 92%);
+}
+
+
 .leftBubble {
   background: #92BEF4;
   display: flex;
@@ -1133,7 +1206,8 @@ h3.darkerBlue {
   flex-direction: column;
   align-items: flex-start;
   color:black;
-  width: 62%;
+  width:auto;
+  max-width: 54%;
   /* max-height: 6em; */
   max-height: 7em;
   margin-top: 2em;
