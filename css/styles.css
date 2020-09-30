@@ -2306,6 +2306,19 @@ label.togglePassword {
 
 }
 
+
+.tab-pane .leftBubble {
+    background: #92BEF4;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: black;
+    padding: 2em 0em;
+    border-radius: 1.5rem;
+    min-width: 12em;
+    max-width: 14em;
+}
+
 .tab-pane h4.teal, .tab-pane h3.darkerBlue {
   line-height: 1.5
 }
@@ -2519,6 +2532,9 @@ label.togglePassword {
 .periwinkle.light{
   background: #e4effb !important
 }
+.purple.light{
+  background: #f1edfd !important
+}
 
 
 .rightCol .black {
@@ -2544,6 +2560,8 @@ label.togglePassword {
   vertical-align: top;
   border-top: 1px solid #c0dfe6;
   color: #002F6C;
+  max-width: 255px;
+
 }
 
 .brightAqua {
