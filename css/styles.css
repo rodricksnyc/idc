@@ -1286,7 +1286,7 @@ h2.teal.medium {
   color: #002F6C;
   font-size: 25px;
   font-weight: 600;
-  padding: 0em 0em;
+  /* padding: 0em 0em; */
   /* margin-bottom: 2em; */
 }
 
@@ -1425,6 +1425,12 @@ h1.white {
 .flip-card:hover .flip-card-inner {
   transform: rotateY(180deg);
 }
+
+
+ .flip-card-inner.flipIt {
+  transform: rotateY(180deg);
+}
+
 
 h1.white.sentMessage {
   color: white;

@@ -47,6 +47,28 @@ $(document).ready(function () {
 		$(this).find('.heading').css('outline', 'none')
 	})
 
+
+	$(".cards").on("keyup", function (e) {
+		var code = (e.keyCode ? e.keyCode : e.which);
+		if (code == 9) {
+			$(this).find('.flip-card').css('outline', 'dashed 3px #4599ff')
+		}
+
+	})
+	$(".cards").on('focusout', function() {
+		$(this).find('.flip-card').css('outline', 'none')
+	})
+
+	$('.cards').on("keyup", function (e) {
+
+		var code = (e.keyCode ? e.keyCode : e.which);
+		if (code == 13) {
+
+			$(this).find('.flip-card-inner').toggleClass('flipIt')
+		}
+	});
+
+
 	$('.whiteBubble').on("keyup", function (e) {
 
 		var code = (e.keyCode ? e.keyCode : e.which);
