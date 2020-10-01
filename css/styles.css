@@ -2988,15 +2988,15 @@ button.close {
     padding-left: 0;
     margin-bottom: 0;
     list-style: none;
-    flex-direction: column;
+    /* flex-direction: column; */
   }
-  #myModal .nav-item {
+  /* #myModal .nav-item {
     width: 100%;
-  }
+  } */
 
   #myModal .nav-tabs .nav-link {
-
-    font-size: 20px;
+    font-size: 12px;
+    padding: 1em 0em;
   }
 
   .tab-pane .middle {
@@ -3015,7 +3015,7 @@ button.close {
   .start {
     display: flex;
     justify-content: center;
-    flex-direction: column;
+    /* flex-direction: column; */
     align-items: center;
   }
 
@@ -3026,9 +3026,13 @@ button.close {
     width:20%
   }
   .tab-pane .landing-sec-H {
-    font-size: 24px;
-    text-align: center;
+      font-size: 19px;
+      text-align: left;
   }
+  .tab-pane .leftBubble {
+    min-width: 10em;
+    max-width: 11em;
+}
   h4.teal {
     font-size: 21px;
 
