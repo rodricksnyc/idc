@@ -475,7 +475,7 @@ h3.darkerBlue {
   color:#002F6C;
   font-size:20px;
   margin-bottom: 0em;
-  /* text-align: left; */
+  line-height: 30px;
 }
 
 .whiteBubble {
