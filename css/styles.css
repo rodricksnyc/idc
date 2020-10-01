@@ -779,6 +779,7 @@ h1.white.sentMessage {
   bottom: 0;
   right:0;
   z-index: -1;
+  background-position: bottom;
 }
 
 /* .aqua::before, .aqua::after {
@@ -2079,6 +2080,13 @@ button.close {
 }
 
 
+@media (min-width:1500px){
+
+
+
+}
+
+
 @media (min-width: 992px){
   .modal-lg {
     max-width: 1170px;
@@ -2128,6 +2136,7 @@ button.close {
     bottom: 0;
     height: 24em;
   }
+
 }
 
 @media (max-width: 1450px) {
