@@ -2535,7 +2535,14 @@ label.togglePassword {
 .purple.light{
   background: #f1edfd !important
 }
+.aqua2.light{
+    background: #bcfdeb !important
+}
 
+
+.salmon.light{
+    background: #fee3e2 !important
+}
 
 .rightCol .black {
   color: #000914;
