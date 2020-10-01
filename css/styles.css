@@ -495,7 +495,7 @@ h3.darkerBlue {
 
 .slideThisDown {
   position: absolute;
-
+  background: white;
   padding: 3em 1em 0em 2em;
 
   z-index: -1;
@@ -511,8 +511,9 @@ h3.darkerBlue {
 }
 
 #description{
-color: black;
-font-weight:600
+  color: black;
+  font-weight:600;
+  font-size:13px;
 
 }
 
@@ -521,13 +522,13 @@ font-weight:600
 }
 
 .purpleSlide {
-    border:1px solid #CEBEFB;
-    background-color: #F1ECFF;
+  border:1px solid #CEBEFB;
+  background-color: #F1ECFF;
 }
 
 .blueSlide {
-    background-color: #DBEBFF;
-    border:1px solid #92BEF4
+  background-color: #DBEBFF;
+  border:1px solid #92BEF4
 }
 
 .aquaSlide {
@@ -808,7 +809,7 @@ h1.white.sentMessage {
   border-bottom-left-radius: 20% 161px; */
 }
 .aqua .mt-5{
-    margin-top: 3.5rem!important;
+  margin-top: 3.5rem!important;
 }
 
 .absoluteImage{
@@ -2017,17 +2018,17 @@ button.close {
 
 /*Bootstrap 4 Tooltip*/
 .tooltip > .arrow {
-    background-color: transparent;
+  background-color: transparent;
 }
 
 .tooltip > .tooltip-inner {
-    text-align: center;
-    font-size: 12px;
-    padding: 10px 15px;
-    border-radius: 5px;
-    color: black;
-    background-color: white;
-    box-shadow: 0 4px 10px 0 rgba(0,0,0,0.15);
+  text-align: center;
+  font-size: 12px;
+  padding: 10px 15px;
+  border-radius: 5px;
+  color: black;
+  background-color: white;
+  box-shadow: 0 4px 10px 0 rgba(0,0,0,0.15);
 }
 
 .bs-tooltip-top,
@@ -2040,18 +2041,18 @@ button.close {
 
 .tooltip.bs-tooltip-top .arrow:before,
 .tooltip.bs-tooltip-bottom .arrow:before {
-    border-top-color: white;
-    border-right-color: transparent;
-    border-bottom-color: white;
-    border-left-color: transparent;
+  border-top-color: white;
+  border-right-color: transparent;
+  border-bottom-color: white;
+  border-left-color: transparent;
 }
 
 .tooltip.bs-tooltip-right .arrow:before,
 .tooltip.bs-tooltip-left .arrow:before{
-    border-top-color: transparent;
-    border-right-color: white;
-    border-bottom-color: transparent;
-    border-left-color: white;
+  border-top-color: transparent;
+  border-right-color: white;
+  border-bottom-color: transparent;
+  border-left-color: white;
 }
 
 
@@ -3051,7 +3052,7 @@ button.close {
     /* flex-direction: column; */
   }
   /* #myModal .nav-item {
-    width: 100%;
+  width: 100%;
   } */
 
   #myModal .nav-tabs .nav-link {
@@ -3086,13 +3087,13 @@ button.close {
     width:20%
   }
   .tab-pane .landing-sec-H {
-      font-size: 19px;
-      text-align: left;
+    font-size: 19px;
+    text-align: left;
   }
   .tab-pane .leftBubble {
     min-width: 10em;
     max-width: 11em;
-}
+  }
   h4.teal {
     font-size: 21px;
 
