@@ -484,6 +484,8 @@ h3.darkerBlue {
   border-radius: 2rem;
   padding:1em;
   box-shadow: 0px 0px 19px -1px rgba(175,175,175,0.67);
+  position: relative;
+
 }
 
 .whiteBubble:hover {
@@ -491,6 +493,51 @@ h3.darkerBlue {
   background: linear-gradient(90deg, rgba(229,241,255,1) 64%, rgba(247,251,255,1) 92%);
 }
 
+.slideThisDown {
+  position: absolute;
+
+  padding: 3em 1em 0em 2em;
+
+  z-index: -1;
+  width:100%;
+  left:0;
+  right:0;
+  top:80%;
+  border-top-left-radius: 1rem;
+  border-top-right-radius: 1rem;
+  border-bottom-left-radius: 2rem;
+  border-bottom-right-radius: 2rem;
+  display: none;
+}
+
+#description{
+color: black;
+font-weight:600
+
+}
+
+.clear {
+  background: white !important;
+}
+
+.purpleSlide {
+    border:1px solid #CEBEFB;
+    background-color: #F1ECFF;
+}
+
+.blueSlide {
+    background-color: #DBEBFF;
+    border:1px solid #92BEF4
+}
+
+.aquaSlide {
+  background-color: #D7FCF2;
+  border:1px solid #A6E9D7
+}
+.salmonSlide {
+  background-color: #fee3e2;
+  border:1px solid #FFA7A4;
+}
 
 .leftBubble {
   background: #92BEF4;
@@ -760,6 +807,9 @@ h1.white.sentMessage {
   /* border-bottom-right-radius: 20% 161px;
   border-bottom-left-radius: 20% 161px; */
 }
+.aqua .mt-5{
+    margin-top: 3.5rem!important;
+}
 
 .absoluteImage{
   position: absolute;
@@ -778,7 +828,7 @@ h1.white.sentMessage {
 
   bottom: 0;
   right:0;
-  z-index: -1;
+  z-index: -7;
   background-position: bottom;
 }
 

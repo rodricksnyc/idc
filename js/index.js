@@ -273,6 +273,89 @@ $(document).ready(function () {
 	);
 
 
+	$('.whiteBubble .purple').on('mouseenter', function(e) {
+		e.stopPropagation()
+		$(this).closest('.whiteBubble').addClass('clear')
+		$(this).closest('.whiteBubble').find('.slideThisDown').slideDown().addClass('purpleSlide')
+
+		$(this).closest('.whiteBubble').find('.slideThisDown p').html('Every student in FS088 should be reported either in FS005 or FS006')
+
+
+	})
+
+	$('.whiteBubble .purple').on('mouseleave', function(e) {
+		e.stopPropagation()
+		$(this).closest('.whiteBubble').removeClass('clear')
+		$(this).closest('.whiteBubble').find('.slideThisDown').slideUp()
+		setTimeout(function() {
+				$(this).closest('.whiteBubble').find('.slideThisDown').removeClass('purpleSlide')
+		},300)
+
+	})
+
+	$('.whiteBubble .aqua2').on('mouseenter', function(e) {
+		e.stopPropagation()
+			$(this).closest('.whiteBubble').addClass('clear')
+		$(this).closest('.whiteBubble').find('.slideThisDown').slideDown().addClass('aquaSlide')
+
+		$(this).closest('.whiteBubble').find('.slideThisDown p').html('Every student in FS088 should be reported either in FS006 or FS005')
+
+
+	})
+
+	$('.whiteBubble .aqua2').on('mouseleave', function(e) {
+		e.stopPropagation()
+		$(this).closest('.whiteBubble').removeClass('clear')
+		$(this).closest('.whiteBubble').find('.slideThisDown').slideUp()
+		setTimeout(function() {
+				$(this).closest('.whiteBubble').find('.slideThisDown').removeClass('aquaSlide')
+		},300)
+
+	})
+
+	$('.whiteBubble .periwinkle').on('mouseenter', function(e) {
+		e.stopPropagation()
+			$(this).closest('.whiteBubble').addClass('clear')
+		$(this).closest('.whiteBubble').find('.slideThisDown').slideDown().addClass('blueSlide')
+
+		$(this).closest('.whiteBubble').find('.slideThisDown p').html('Every child counted in FS088 must have at least one removal counted on file FS143.')
+
+
+	})
+
+	$('.whiteBubble .periwinkle').on('mouseleave', function(e) {
+		e.stopPropagation()
+			$(this).closest('.whiteBubble').removeClass('clear')
+		$(this).closest('.whiteBubble').find('.slideThisDown').slideUp()
+		setTimeout(function() {
+				$(this).closest('.whiteBubble').find('.slideThisDown').removeClass('blueSlide')
+		},300)
+
+	})
+
+	$('.whiteBubble .salmon').on('mouseenter', function(e) {
+		e.stopPropagation()
+			$(this).closest('.whiteBubble').addClass('clear')
+		$(this).closest('.whiteBubble').find('.slideThisDown').slideDown().addClass('salmonSlide')
+
+		$(this).closest('.whiteBubble').find('.slideThisDown p').html('Every student in FS088 should be reported either in FS006 or FS005')
+
+
+	})
+
+	$('.whiteBubble .salmon').on('mouseleave', function(e) {
+		e.stopPropagation()
+			$(this).closest('.whiteBubble').removeClass('clear')
+		$(this).closest('.whiteBubble').find('.slideThisDown').slideUp()
+		setTimeout(function() {
+				$(this).closest('.whiteBubble').find('.slideThisDown').removeClass('salmonSlide')
+		},300)
+
+	})
+
+
+
+
 
 
 })
