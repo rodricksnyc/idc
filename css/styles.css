@@ -169,6 +169,14 @@ body * {
 
 .block50 {
   padding: 2em 0em 5em 0em;
+  position: relative;
+}
+
+.absoluteImage2 {
+    position: absolute;
+    left: 1em;
+    bottom: 0;
+    height: 30em;
 }
 .logo {
   max-width: 25em;
@@ -4207,7 +4215,29 @@ button.close {
   }
 }
 
+
+@media (max-width:1500px){
+  .guide-list{
+    padding:0em 3em
+  }
+  .absoluteImage2 {
+    position: absolute;
+    left: 1em;
+    bottom: 0;
+    height: 24em;
+}
+}
+
 @media (max-width: 1450px) {
+
+  .absoluteImage2 {
+
+    height: 24em;
+}
+
+.guide-list {
+    padding: 0em 5em;
+}
 
   .flip-card, .flip-card-front {
 
@@ -4230,6 +4260,17 @@ button.close {
 
 
 @media (max-width:1400px) and (min-width:1025px){
+
+
+  .guide-list{
+    padding:0em 4em
+  }
+  .absoluteImage2 {
+    position: absolute;
+    left: 1em;
+    bottom: 0;
+    height: 20em;
+}
   .block10 .col-lg-4 {
 
     flex: 0 0 50%;
@@ -4257,7 +4298,7 @@ button.close {
   }
   .whiteBubble2 .tealColor {
 
-    font-size: 16px;
+    font-size: 15px;
   }
 
 
@@ -4376,6 +4417,11 @@ button.close {
 
 
 @media (max-width:1024px){
+
+  .absoluteImage2 {
+
+    height: 20em;
+}
   .absoluteText {
     top: 72px;
   }
@@ -4511,11 +4557,22 @@ button.close {
   .content-spacer1 {
     height: 30vh;
   }
+  .absoluteImage2 {
+
+    height: 20em;
+}
 
 }
 
 @media (max-width:991px) and (min-width:768px) {
+  .absoluteImage2 {
 
+    height: 16em;
+}
+
+.guide-list {
+    padding: 0em 1em;
+}
 
   .block10 .col-lg-4 {
     flex: 0 0 100%;
@@ -4636,6 +4693,15 @@ button.close {
 }
 
 @media (max-width: 767px) {
+
+  .absoluteImage2 {
+
+    display: none
+}
+
+.guide-list {
+    padding: 0em 1em;
+}
 
   .absoluteText {
     top: 51px;
