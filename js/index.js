@@ -1,9 +1,12 @@
 $(document).ready(function () {
 
-	// const prefersColorSchemeDark = window.matchMedia('(prefers-color-scheme: dark)');
-	// if (prefersColorSchemeDark.matches) {
-	// 	// Apply a dark color scheme
-	// }
+	$('[data-toggle=tooltip]').tooltip();
+	$(".top").tooltip({
+		placement: "top"
+	});
+	$('[data-toggle="tooltip"]').tooltip({
+   container: 'body'
+});
 
 	$('.back-to-top').click(() => {
 		scrollfn("#overview");
@@ -20,7 +23,6 @@ $(document).ready(function () {
 		$('html, body').stop().animate({
 			'scrollTop': offSet
 		}, 1200, 'swing');
-
 
 	}
 
@@ -68,7 +70,6 @@ $(document).ready(function () {
 		}
 	});
 
-
 	$('.whiteBubble').on("keyup", function (e) {
 
 		var code = (e.keyCode ? e.keyCode : e.which);
@@ -81,18 +82,15 @@ $(document).ready(function () {
 
 
 
-$('.whiteBubble').on('mouseenter',function() {
-	$(this).find('.rightBubble').hide()
-	$(this).find('.new').show().css('display', 'flex')
-})
+	$('.whiteBubble').on('mouseenter',function() {
+		$(this).find('.rightBubble').hide()
+		$(this).find('.new').show().css('display', 'flex')
+	})
 
-$('.whiteBubble').on('mouseleave',function() {
-	$(this).find('.rightBubble').show()
-	$(this).find('.new').hide().css('display', 'none')
-})
-
-
-
+	$('.whiteBubble').on('mouseleave',function() {
+		$(this).find('.rightBubble').show()
+		$(this).find('.new').hide().css('display', 'none')
+	})
 
 
 
@@ -124,10 +122,6 @@ $('.whiteBubble').on('mouseleave',function() {
 		}
 	})
 
-
-
-
-
 	$('.radio-inline input').change(function (e) {
 
 		setReasonActive();
@@ -150,22 +144,6 @@ $('.whiteBubble').on('mouseleave',function() {
 	setReasonActive()
 
 
-
-
-
-
-
-	function scrollfn(e) {
-		let $target = $(e),
-		offSet = e === "#Home" ? 0 : $target.offset().top;
-		$('html, body').stop().animate({
-			'scrollTop': offSet
-		}, 1200, 'swing');
-
-		// setTimeout(function(){
-		// 	$(':focus').blur();
-		// }, 1300);
-	}
 
 	$('.menu-buttons-list li, .menu-buttons-floating-list li, .menu-buttons-768-list li').on('click', function (e) {
 
@@ -205,9 +183,6 @@ $('.whiteBubble').on('mouseleave',function() {
 
 
 
-
-
-
 	$(window).scroll(function () {
 		var distanceY = window.pageYOffset || document.documentElement.scrollTop;
 		if (distanceY > 555) {
@@ -230,131 +205,72 @@ $('.whiteBubble').on('mouseleave',function() {
 	});
 
 
-var toggle = function (){
-$(this).closest('.key1').find('.slideUp').slideToggle('800')
+	var toggle = function (){
+		$(this).closest('.key1').find('.slideUp').slideToggle('800')
 
-$(this).closest('.key1').find('.navyFont i').toggleClass('rotate')
+		$(this).closest('.key1').find('.navyFont i').toggleClass('rotate')
 
-}
-$('.slideToggle').keypress(
-	toggle
+	}
+	$('.slideToggle').keypress(
+		toggle
 
-).click(
-	toggle
-);
-
-
-
-var toggleAll = function (){
-
-if (!$(this).hasClass('hiddenKey')) {
-
-$(this).html('<i class="far fa-expand-arrows"></i> key').addClass('hiddenKey')
-
-$(this).closest('.keys').find('.key1').slideUp('800')
-
-$(this).addClass('funBubble')
-
-if ($(document).innerWidth() > 767) {
-setTimeout(function() {
-	$('.toggleAll').css({
-		"transform" : "rotate(-90deg)"
-	});
-}, 500)
-}
+	).click(
+		toggle
+	);
 
 
+	var toggleAll = function (){
 
-}
+		if (!$(this).hasClass('hiddenKey')) {
 
-else {
+			$(this).html('<i class="far fa-expand-arrows"></i> key').addClass('hiddenKey')
 
-	$('.toggleAll').hide()
-	$(this).html('collapse all <i class="far fa-compress-arrows-alt"></i>').removeClass('hiddenKey')
+			$(this).closest('.keys').find('.key1').slideUp('800')
 
-	$(this).closest('.keys').find('.key1').slideDown('800')
+			$(this).addClass('funBubble')
 
-	$(this).removeClass('funBubble')
-
-if ($(document).innerWidth() > 767) {
-	setTimeout(function() {
-
-	$('.toggleAll').show()
-
-		$('.toggleAll').css({
-			"transform" : "rotate(0deg)"
-		});
-	}, 500)
-
-}
+			if ($(document).innerWidth() > 767) {
+				setTimeout(function() {
+					$('.toggleAll').css({
+						"transform" : "rotate(-90deg)"
+					});
+				}, 500)
+			}
 
 
-}
+		}
 
-}
-$('.toggleAll').keypress(
-	toggleAll
+		else {
 
-).click(
-	toggleAll
-);
+			$('.toggleAll').hide()
+			$(this).html('collapse all <i class="far fa-compress-arrows-alt"></i>').removeClass('hiddenKey')
+
+			$(this).closest('.keys').find('.key1').slideDown('800')
+
+			$(this).removeClass('funBubble')
+
+			if ($(document).innerWidth() > 767) {
+				setTimeout(function() {
+
+					$('.toggleAll').show()
+
+					$('.toggleAll').css({
+						"transform" : "rotate(0deg)"
+					});
+				}, 500)
+
+			}
 
 
+		}
 
-// var clickLastNav = function() {
-//
-//
-//
-// 	// $('.nav-link:eq(3)').on('click', function() {
-// 	if (!$('.nav-link:eq(3)').hasClass('bars')) {
-//
-// 		$('.stickyNav .nav .nav-item').last().css('background', 'transparent')
-//
-//
-// 		$('.nav-link:eq(3)').html('<i class="fas fa-bars"></i>').addClass('bars')
-// 		$('.nav-item:not(:last-child)').hide()
-//
-// 		$('.nav-item').last().css({
-// 			'margin' : '0em'
-// 		})
-//
-// 		$('.nav-item .nav-link').last().css({
-// 			'padding' : '.4rem 1rem'
-// 		})
-//
-// 		$('.nav-item i').last().css('font-size', '27px')
-//
-// 	}
-//
-// 	else {
-//
-// 		$('.stickyNav .nav .nav-item').last().css('background', 'transparent')
-//
-// 		$('.nav-item:not(:last-child)').show()
-//
-// 		$('.nav-link:eq(3)').html('<i class="far fa-compress-arrows-alt"></i>').removeClass('bars')
-//
-// 		$('.nav-item').last().css({
-// 			'margin' : '0em 0em 1em 0em'
-// 		})
-// 		$('.nav-item .nav-link').last().css({
-// 			'padding' : '.5rem 1rem'
-// 		})
-//
-// 		$('.nav-item i').last().css('font-size', '1.5rem')
-//
-// 	}
-//
-//
-//
-// }
-//
-// $('.nav-link:eq(3)').keypress(
-// 	clickLastNav
-//
-// ).click(
-// 	clickLastNav
-// );
+	}
+	$('.toggleAll').keypress(
+		toggleAll
+
+	).click(
+		toggleAll
+	);
 
 
 
