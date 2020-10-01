@@ -343,9 +343,9 @@ a {
 .whiteBubble3 {
   background: white;
   border: 1px solid #92BEF4;
-  border-radius: 1rem;
+  border-radius: 2rem;
   padding: 1em;
-
+  box-shadow: 0px 0px 19px -1px rgba(175,175,175,0.67);
 }
 
 
@@ -481,8 +481,9 @@ h3.darkerBlue {
 .whiteBubble {
   background: white;
   border:1px solid #92BEF4;
-  border-radius: 1rem;
-  padding:1em
+  border-radius: 2rem;
+  padding:1em;
+  box-shadow: 0px 0px 19px -1px rgba(175,175,175,0.67);
 }
 
 .whiteBubble:hover {
@@ -834,7 +835,7 @@ top: 99%;
 }
 
 .smaller {
-  font-size: 18px;
+  font-size: 20px;
   margin: auto;
   padding: 1em 1.5em;
   font-weight: 600;
