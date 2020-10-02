@@ -802,11 +802,13 @@ h1.white {
 
 .flip-card:hover .flip-card-inner {
   transform: rotateY(180deg);
+  -webkit-transform: rotateY(180deg);
 }
 
 
 .flip-card-inner.flipIt {
   transform: rotateY(180deg);
+  -webkit-transform: rotateY(180deg);
 }
 
 
