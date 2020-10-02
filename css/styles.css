@@ -2671,7 +2671,7 @@ button.close {
   }
 
   h3.teal {
-    font-size: 28px;
+    font-size: 26px;
     color: #08768D;
     text-align: left;
     margin-top: .6em;
@@ -2679,10 +2679,17 @@ button.close {
     margin-bottom: 1em;
   }
 
-  .block10 h3.darkerBlue {
+  .block10 h3.darkerBlue, .block5 h3.darkerBlue {
     font-size: 20px;
     text-align: left;
+    line-height: 30px
   }
+  .aqua .mt-5 {
+    margin-top: 0rem!important;
+}
+.aqua  .mb-3 {
+    margin-bottom: 2rem!important;
+}
 
   .guide-list {
     padding: 0em 1em;
@@ -3326,10 +3333,10 @@ button.close {
     padding-right: 1%;
   }
   .longCard .flip-card, .longCard .flip-card-front {
-    height: 33em;
+    height: 34em;
   }
   .longCard2 .flip-card, .longCard2 .flip-card-front {
-    height: 29em;
+    height: 30em;
   }
 
 
@@ -3356,6 +3363,14 @@ button.close {
   .block0 h1.teal.medium {
     font-size: 20px;
   }
+  .flip-card-back {
+    padding: 1em 0em;
+
+}
+.absoluteText {
+
+    padding: 0em 2em;
+}
   h3.teal {
     font-size: 20px;
   }
