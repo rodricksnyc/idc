@@ -475,8 +475,9 @@ h3.darkerBlue {
   color:#002F6C;
   font-size:20px;
   margin-bottom: 0em;
-  line-height: 30px;
+
 }
+
 
 .whiteBubble {
   background: white;
@@ -2131,8 +2132,11 @@ button.close {
 }
 
 
-@media (min-width:1500px){
+@media (min-width:1025px){
+  h3.darkerBlue {
 
+    line-height: 30px;
+  }
 
 
 }
@@ -3038,7 +3042,7 @@ button.close {
     padding-right: 0em;
     padding-top:0em;
     padding-bottom:0em;
-    /* opacity: 1; */
+
   }
 
   .nav {
@@ -3049,11 +3053,8 @@ button.close {
     padding-left: 0;
     margin-bottom: 0;
     list-style: none;
-    /* flex-direction: column; */
+
   }
-  /* #myModal .nav-item {
-  width: 100%;
-  } */
 
   #myModal .nav-tabs .nav-link {
     font-size: 12px;
@@ -3076,7 +3077,7 @@ button.close {
   .start {
     display: flex;
     justify-content: center;
-    /* flex-direction: column; */
+
     align-items: center;
   }
 
@@ -3087,7 +3088,7 @@ button.close {
     width:20%
   }
   .tab-pane .landing-sec-H {
-    font-size: 19px;
+    font-size: 24px;
     text-align: left;
   }
   .tab-pane .leftBubble {
