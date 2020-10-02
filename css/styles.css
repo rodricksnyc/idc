@@ -701,7 +701,7 @@ h1.teal.medium {
 }
 
 .flip-card-back {
-
+  transform-style: preserve-3d;
   transform: rotateY(180deg);
   display: flex;
   flex-direction: column;
@@ -804,12 +804,14 @@ h1.white {
 .flip-card:hover .flip-card-inner {
   transform: rotateY(180deg);
   -webkit-transform: rotateY(180deg);
+    transform-style: preserve-3d;
 }
 
 
 .flip-card-inner.flipIt {
   transform: rotateY(180deg);
   -webkit-transform: rotateY(180deg);
+    transform-style: preserve-3d;
 }
 
 
