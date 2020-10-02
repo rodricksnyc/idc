@@ -3231,6 +3231,11 @@ button.close {
     left: calc(50% - 11px) */
   }
 
+  .cards h3.darkerBlue {
+
+    margin-bottom: 0em;
+}
+
 
   .landing-sec-H {
     font-size: 18px;
