@@ -287,7 +287,15 @@ $(document).ready(function () {
 
 		if( $(this).hasClass('purple')) {
 
-			console.log('purple')
+			// var slides = $(this).closest('.whiteBubble').find('.slideThisDown')
+			//
+			// $(slides).addClass('activeSlide')
+			// //
+			// // var slides = $(this).closest('.whiteBubble').find('.slideThisDown')
+			//
+			// // $('.slideThisDown').not(this).each(function() {
+			// // 	$(this).removeClass('activeSlide')
+			// // })
 
 			$(this).closest('.whiteBubble').find('.slideThisDown').addClass('purpleSlide')
 			$(this).closest('.whiteBubble').find('.slideThisDown').removeClass('aquaSlide')
@@ -300,7 +308,6 @@ $(document).ready(function () {
 
 
 		if( $(this).hasClass('aqua2')) {
-			console.log('aqua')
 
 			$(this).closest('.whiteBubble').find('.slideThisDown').addClass('aquaSlide')
 			$(this).closest('.whiteBubble').find('.slideThisDown').removeClass('purpleSlide')
@@ -311,8 +318,6 @@ $(document).ready(function () {
 		}
 
 		if( $(this).hasClass('periwinkle')) {
-
-			console.log('blue')
 
 			$(this).closest('.whiteBubble').find('.slideThisDown').addClass('blueSlide')
 			$(this).closest('.whiteBubble').find('.slideThisDown').removeClass('purpleSlide')
