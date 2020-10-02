@@ -225,6 +225,8 @@ $(document).ready(function () {
 
 			$(this).html('<i class="far fa-expand-arrows"></i> key').addClass('hiddenKey')
 
+			$(this).closest('.row').find('.col-lg-4').removeClass('col-lg-4').addClass('col-lg-2')
+
 			$(this).closest('.keys').find('.key1').slideUp('800')
 
 			$(this).addClass('funBubble')
@@ -244,6 +246,8 @@ $(document).ready(function () {
 
 			$('.toggleAll').hide()
 			$(this).html('collapse all <i class="far fa-compress-arrows-alt"></i>').removeClass('hiddenKey')
+
+			$(this).closest('.row').find('.col-lg-2').removeClass('col-lg-2').addClass('col-lg-4')
 
 			$(this).closest('.keys').find('.key1').slideDown('800')
 

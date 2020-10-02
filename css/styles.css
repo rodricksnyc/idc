@@ -1,5 +1,4 @@
 
-
 .strong{
   font-weight:700
 }
@@ -12,7 +11,6 @@
 .rel {
   position:relative;
 }
-
 
 .card-header {
   padding: 0rem;
@@ -237,11 +235,9 @@ a.nav-item {
   position: relative;
 }
 
-
 a {
   text-decoration: none !important
 }
-
 
 .rounded-lg {
   border-radius: 1rem;
@@ -357,8 +353,6 @@ a {
   width: 6em;
   position: relative;
   top: calc(50% - 3em);
-
-
 }
 
 .toggleAll:hover, .heading:hover, .whiteBubble:hover {
@@ -1646,54 +1640,6 @@ span.blue {
   justify-content: space-around;
 }
 
-.radio-inline input[type='radio']:checked:after {
-  width: 14px;
-  height: 14px;
-  border-radius: 15px;
-  top: 0;
-  left: 0;
-  position: relative;
-  background-color:#7bc043 ;
-
-  content: '';
-  display: inline-block;
-  visibility: visible;
-  border: 2px solid white;
-}
-input[type="radio"], input[type="checkbox"] {
-  margin: 4px 0 0;
-  margin-top: 1px \9;
-  line-height: normal;
-}
-.radio input[type="radio"], .radio-inline input[type="radio"], .checkbox input[type="checkbox"], .checkbox-inline input[type="checkbox"] {
-  position: absolute;
-  margin-top: 4px \9;
-  margin-left: -20px;
-}
-
-fieldset {
-  padding: 0 !important;
-  border: none !important;
-}
-
-.around .vertical {
-  height: 82px;
-  border-radius: 0px;
-  padding: 3px;
-  padding-top: 1em;
-  padding-left: 15px;
-}
-
-.around .vertical:nth-of-type(1) {
-  width: 38%;
-}
-
-.around .vertical:nth-of-type(2) {
-  width: 36%;
-}
-.around .vertical:nth-of-type(3) {
-  width: 22%;
-}
 
 .vertical {
   display: -webkit-flex;
@@ -1709,16 +1655,7 @@ fieldset {
   -ms-align-items: center;
   align-items: center;
 }
-legend {
-  padding: 0 !important;
-  width: 0% !important;
-  padding: 0 !important;
-  margin-bottom: 0px !important;
-  font-size: 0px !important;
-  line-height: inherit;
-  border: 0;
-  border-bottom: none;
-}
+
 
 .formIcon {
   margin-bottom: 5px;
@@ -1828,42 +1765,6 @@ p.modalFooter {
   padding-top: 0em;
 }
 
-.img-rc-container{
-  width: 100%
-}
-
-.img-lr-container{
-  /* width: 50%; */
-  display: flex;
-  justify-content: center;
-  position: relative;
-}
-
-.img-rc{
-  width: 55%;
-  position: absolute;
-  right: 0px;
-  top: -2px;
-}
-
-.img-l{
-  position: absolute;
-  left: -100px;
-  top: -500px;
-  width: 200px;
-  height: 600px;
-  /* transition: all 0.4s; */
-}
-
-.img-r{
-  position: absolute;
-  right: -200px;
-  top: -650px;
-  width: 350px;
-  height: 600px;
-  /* transition: all 0.4s; */
-}
-
 .guide-overlay{
   position: relative;
 }
@@ -1899,26 +1800,7 @@ html, body{
   background-color: rgba(255, 255, 255, .9);
 }
 
-.menu-container{
-  display: flex;
-  width: 70%;
-  padding-right: 2%;
-  position: relative;
-  align-items: center;
-  justify-content: flex-end;
-}
 
-.img-rc-dashboard{
-  width: auto;
-  height: inherit;
-  position: absolute;
-  right: -8px;
-  top: 0px;
-  min-height: 90px;
-  min-width: 600px;
-  max-height: 160px;
-  z-index: -1;
-}
 
 .nav-pills .nav-link.active, .nav-pills .show>.nav-link{
   background-color: rgba(255, 255, 255, 0.2);
@@ -2013,19 +1895,7 @@ button.close {
   padding:0
 }
 
-.enterBtn {
-  color:#002D44;
-  width: auto;
-  border-color:#7bc043;
-  padding: .3em 2.5em;
-  border-radius: 1.5rem;
-  font-size: 19px;
-  background: #7bc043;
-  margin:1rem 0rem 2rem 0rem
-}
-.enterBtn:hover {
-  background: #00559B !important
-}
+
 
 .ccPadding {
   padding:4em 1em
@@ -2067,10 +1937,7 @@ button.close {
 
     line-height: 30px;
   }
-
-
 }
-
 
 @media (min-width: 992px){
   .modal-lg {
@@ -2086,8 +1953,6 @@ button.close {
 .modal-body {
   padding: 0rem;
 }
-
-
 
 
 @media (max-width: 1650px) {
@@ -2203,7 +2068,6 @@ button.close {
   .flip-card, .flip-card-front {
     height: 23em;
   }
-
 
 }
 
@@ -2616,10 +2480,10 @@ button.close {
   }
   .aqua .mt-5 {
     margin-top: 0rem!important;
-}
-.aqua  .mb-3 {
+  }
+  .aqua  .mb-3 {
     margin-bottom: 2rem!important;
-}
+  }
 
   .guide-list {
     padding: 0em 1em;
@@ -3171,7 +3035,7 @@ button.close {
   .cards h3.darkerBlue {
 
     margin-bottom: 0em;
-}
+  }
 
 
   .landing-sec-H {
@@ -3296,11 +3160,11 @@ button.close {
   .flip-card-back {
     padding: 1em 0em;
 
-}
-.absoluteText {
+  }
+  .absoluteText {
 
     padding: 0em 2em;
-}
+  }
   h3.teal {
     font-size: 20px;
   }
@@ -3395,9 +3259,6 @@ button.close {
   }
 
 }
-
-
-
 
 @media (max-width:330px) {
   .hero-img-container.secondOne {
