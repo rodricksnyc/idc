@@ -2704,9 +2704,9 @@ button.close {
   }
   .absoluteText {
     position: absolute;
-    top: .7%;
+    top: 60px;
     text-align: center;
-    z-index: 9999;
+    z-index: 9;
     width: auto;
     left: calc(50% - 14em);
     max-width: 28em;
